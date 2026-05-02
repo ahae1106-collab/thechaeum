@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>예약·상담 | 더채움 에스테틱 — [지역명]</title>
+  <meta name="description" content="더채움 에스테틱 예약 및 상담 안내. 카카오채널, 네이버 예약, 전화 문의로 간편하게 예약하세요. 첫 방문 상담 무료.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="예약·상담 | 더채움 에스테틱">
+  <meta property="og:description" content="첫 방문 상담 무료. 카카오채널 또는 온라인으로 간편하게 예약하세요.">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/booking.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="main-nav" class="scrolled">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.png" alt="더채움 로고" onerror="this.style.display='none'">
+      <span class="logo-text" style="color:var(--color-text-primary);">THE<span>CHAEUM</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">홈</a></li>
+      <li><a href="services.html">서비스</a></li>
+      <li><a href="index.html#concerns">피부 고민</a></li>
+      <li><a href="index.html#reviews">후기</a></li>
+      <li><a href="booking.html" class="active">예약</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="booking.html" style="color:var(--color-text-primary);border-color:var(--color-border);">예약하기</a>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="메뉴 열기">
+      <span style="background:var(--color-text-primary);"></span>
+      <span style="background:var(--color-text-primary);"></span>
+      <span style="background:var(--color-text-primary);"></span>
+    </button>
+  </nav>
+
+  <!-- 모바일 메뉴 -->
+  <div class="nav-overlay" id="nav-overlay"></div>
+  <div class="nav-mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="index.html">홈</a></li>
+      <li><a href="services.html">서비스</a></li>
+      <li><a href="index.html#concerns">피부 고민</a></li>
+      <li><a href="index.html#reviews">후기</a></li>
+      <li><a href="booking.html">예약</a></li>
+    </ul>
+    <div class="mobile-cta">
+      <a href="booking.html" class="btn-primary" style="width:100%;display:block;">지금 예약하기</a>
+    </div>
+  </div>
+
+  <!-- ===== PAGE HERO ===== -->
+  <div class="page-hero">
+    <span class="label">Reservation</span>
+    <h1>예약 &amp; 상담</h1>
+    <p>편한 방법으로 예약해 주세요. 첫 방문 피부 분석 상담은 무료입니다.</p>
+  </div>
+
+  <!-- ===== 예약 채널 ===== -->
+  <section class="booking-channels">
+    <div style="max-width:1100px;margin:0 auto;">
+      <div class="section-header fade-up">
+        <span class="label">Quick Booking</span>
+        <h2>간편 예약</h2>
+        <p>원하시는 방법으로 편하게 예약하세요</p>
+      </div>
+
+      <div class="channels-grid">
+        <div class="channel-card fade-up">
+          <div class="channel-icon kakao">💬</div>
+          <h3>카카오채널</h3>
+          <p>카카오톡으로<br>빠르게 문의·예약</p>
+          <a href="https://pf.kakao.com/_[채널ID]" class="channel-btn kakao-btn" target="_blank" rel="noopener">카카오로 예약</a>
+        </div>
+
+        <div class="channel-card fade-up fade-up-delay-1">
+          <div class="channel-icon naver">N</div>
+          <h3>네이버 예약</h3>
+          <p>네이버 스마트플레이스로<br>실시간 예약</p>
+          <a href="https://booking.naver.com/[업체ID]" class="channel-btn naver-btn" target="_blank" rel="noopener">네이버로 예약</a>
+        </div>
+
+        <div class="channel-card fade-up fade-up-delay-2">
+          <div class="channel-icon phone">📞</div>
+          <h3>전화 예약</h3>
+          <p>전화로 바로<br>예약·상담</p>
+          <a href="tel:[전화번호]" class="channel-btn phone-btn">[전화번호]</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 상담 폼 ===== -->
+  <section class="booking-form-section">
+    <div class="booking-layout" style="max-width:1100px;margin:0 auto;">
+
+      <!-- 좌측: 안내 정보 -->
+      <div class="booking-info fade-up">
+        <h2>온라인 상담 신청</h2>
+        <p>아래 폼을 작성해 주시면 1영업일 내로 연락드립니다. 방문 상담 및 예약 희망 날짜를 문의 내용에 남겨주시면 더 빠르게 안내해 드릴 수 있습니다.</p>
+
+        <ul class="info-list">
+          <li>
+            <div class="info-icon">📍</div>
+            <div class="info-list-content">
+              <strong>주소</strong>
+              <span>[도로명 주소]</span>
+            </div>
+          </li>
+          <li>
+            <div class="info-icon">🕐</div>
+            <div class="info-list-content">
+              <strong>운영시간</strong>
+              <span>월–토 10:00–20:00<br>일요일·공휴일 휴무</span>
+            </div>
+          </li>
+          <li>
+            <div class="info-icon">📞</div>
+            <div class="info-list-content">
+              <strong>전화</strong>
+              <span>[전화번호]</span>
+            </div>
+          </li>
+          <li>
+            <div class="info-icon">🚇</div>
+            <div class="info-list-content">
+              <strong>교통</strong>
+              <span>[대중교통 안내]</span>
+            </div>
+          </li>
+          <li>
+            <div class="info-icon">🅿️</div>
+            <div class="info-list-content">
+              <strong>주차</strong>
+              <span>[주차 안내]</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 우측: 폼 -->
+      <div class="fade-up fade-up-delay-1">
+        <form class="consult-form" id="consult-form" novalidate>
+          <h3>상담 신청서</h3>
+
+          <div id="form-success" class="form-success">
+            <div class="success-icon">✅</div>
+            <h3>상담 신청이 완료되었습니다</h3>
+            <p>1영업일 내로 [전화번호] 또는 카카오채널로 연락드리겠습니다.<br>감사합니다.</p>
+          </div>
+
+          <div id="form-fields">
+            <div class="form-group" id="group-name">
+              <label for="name">이름 <span class="required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="홍길동" autocomplete="name">
+              <span class="field-error" id="error-name">이름을 입력해 주세요.</span>
+            </div>
+
+            <div class="form-group" id="group-phone">
+              <label for="phone">연락처 <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="010-0000-0000" autocomplete="tel">
+              <span class="field-error" id="error-phone">올바른 연락처를 입력해 주세요. (예: 010-0000-0000)</span>
+            </div>
+
+            <div class="form-group" id="group-service">
+              <label for="service">관심 서비스</label>
+              <select id="service" name="service">
+                <option value="">서비스를 선택해 주세요</option>
+                <option value="trouble">트러블·여드름 케어</option>
+                <option value="regen">재생·진정 케어</option>
+                <option value="pore">모공·탄력 케어</option>
+                <option value="package">스페셜 패키지</option>
+                <option value="consult">피부 상담만 원합니다</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>피부 고민 (복수 선택 가능)</label>
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="concerns" value="acne">
+                  <span>여드름·트러블</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="concerns" value="pigment">
+                  <span>색소침착·잡티</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="concerns" value="pore">
+                  <span>모공·블랙헤드</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="concerns" value="sensitive">
+                  <span>민감성·홍조</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="concerns" value="lifting">
+                  <span>탄력·리프팅</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="concerns" value="dryness">
+                  <span>건조·수분 부족</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">문의 내용 <span class="caption">(선택)</span></label>
+              <textarea id="message" name="message" placeholder="희망 예약 날짜, 추가 문의사항을 자유롭게 입력해 주세요." rows="4"></textarea>
+            </div>
+
+            <div class="form-group" id="group-privacy">
+              <label class="privacy-agree">
+                <input type="checkbox" id="privacy" name="privacy">
+                <span class="privacy-agree-text">
+                  <strong>[개인정보 수집 및 이용 동의]</strong><br>
+                  성명, 연락처를 상담 목적으로 수집하며 상담 완료 후 즉시 파기합니다. 동의를 거부할 권리가 있으나, 거부 시 상담 서비스 이용이 제한됩니다.
+                  <span class="required">*</span>
+                </span>
+              </label>
+              <span class="field-error" id="error-privacy">개인정보 수집 및 이용에 동의해 주세요.</span>
+            </div>
+
+            <div class="form-submit-area">
+              <button type="submit" class="btn-primary">상담 신청하기</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 지도 ===== -->
+  <section class="map-section">
+    <div class="map-layout" style="max-width:1100px;margin:0 auto;">
+      <div class="map-embed fade-up">
+        <!-- 실제 주소 입력 후 Google Maps embed URL로 교체하세요 -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.944!2d127.0276!3d37.4979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z!5e0!3m2!1sko!2skr!4v1234567890"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="더채움 에스테틱 위치">
+        </iframe>
+      </div>
+
+      <div class="map-info fade-up fade-up-delay-1">
+        <h3>오시는 길</h3>
+        <ul class="map-details">
+          <li>
+            <span class="detail-key">주소</span>
+            <span>[도로명 주소]</span>
+          </li>
+          <li>
+            <span class="detail-key">운영</span>
+            <span>월–토 10:00–20:00<br><span style="font-size:12px;color:var(--color-text-muted);">일요일·공휴일 휴무</span></span>
+          </li>
+          <li>
+            <span class="detail-key">전화</span>
+            <span><a href="tel:[전화번호]" style="color:var(--color-cta);">[전화번호]</a></span>
+          </li>
+          <li>
+            <span class="detail-key">지하철</span>
+            <span>[대중교통 안내]</span>
+          </li>
+          <li>
+            <span class="detail-key">주차</span>
+            <span>[주차 안내]</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-text">THECHAEUM</div>
+          <p>더채움 에스테틱<br>문제성 피부 전문 프리미엄 피부관리샵</p>
+        </div>
+        <div class="footer-col">
+          <h4>서비스</h4>
+          <ul>
+            <li><a href="services.html#trouble">트러블·여드름 케어</a></li>
+            <li><a href="services.html#regen">재생·진정 케어</a></li>
+            <li><a href="services.html#pore">모공·탄력 케어</a></li>
+            <li><a href="services.html#package">스페셜 패키지</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>정보</h4>
+          <ul>
+            <li><a href="index.html#concerns">피부 고민</a></li>
+            <li><a href="index.html#reviews">고객 후기</a></li>
+            <li><a href="booking.html">예약·상담</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>오시는 길</h4>
+          <address>
+            [도로명 주소]<br>
+            TEL [전화번호]<br>
+            월–토 10:00–20:00<br>
+            일요일·공휴일 휴무
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 더채움 에스테틱. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#">Instagram</a>
+          <a href="#">Kakao</a>
+          <a href="#">Naver</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/booking-form.js"></script>
+</body>
+</html>

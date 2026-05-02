@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서비스 | 더채움 에스테틱 — [지역명] 문제성 피부 전문</title>
+  <meta name="description" content="더채움 에스테틱의 트러블케어, 재생진정케어, 모공탄력케어, 스페셜 패키지 서비스를 소개합니다. 피부 고민에 맞는 전문 케어를 받아보세요.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="서비스 | 더채움 에스테틱">
+  <meta property="og:description" content="문제성 피부 전문 더채움의 시그니처 케어 서비스">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=1200&q=80">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/services.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="main-nav" class="scrolled">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.png" alt="더채움 로고" onerror="this.style.display='none'">
+      <span class="logo-text" style="color:var(--color-text-primary);">THE<span>CHAEUM</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">홈</a></li>
+      <li><a href="services.html" class="active">서비스</a></li>
+      <li><a href="index.html#concerns">피부 고민</a></li>
+      <li><a href="index.html#reviews">후기</a></li>
+      <li><a href="booking.html">예약</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="booking.html" style="color:var(--color-text-primary);border-color:var(--color-border);">예약하기</a>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="메뉴 열기" style="--span-color:#1e1c18;">
+      <span style="background:var(--color-text-primary);"></span>
+      <span style="background:var(--color-text-primary);"></span>
+      <span style="background:var(--color-text-primary);"></span>
+    </button>
+  </nav>
+
+  <!-- 모바일 메뉴 -->
+  <div class="nav-overlay" id="nav-overlay"></div>
+  <div class="nav-mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="index.html">홈</a></li>
+      <li><a href="services.html">서비스</a></li>
+      <li><a href="index.html#concerns">피부 고민</a></li>
+      <li><a href="index.html#reviews">후기</a></li>
+      <li><a href="booking.html">예약</a></li>
+    </ul>
+    <div class="mobile-cta">
+      <a href="booking.html" class="btn-primary" style="width:100%;display:block;">지금 예약하기</a>
+    </div>
+  </div>
+
+  <!-- ===== PAGE HERO ===== -->
+  <div class="page-hero">
+    <span class="label">Our Services</span>
+    <h1>더채움의 케어 서비스</h1>
+    <p>피부 고민에 맞춰 설계된 전문 케어 프로그램. 단순한 관리를 넘어 피부 본래의 건강함을 회복시켜 드립니다.</p>
+  </div>
+
+  <!-- ===== 관리 프로세스 ===== -->
+  <section class="process-section">
+    <div style="max-width:1100px;margin:0 auto;">
+      <div class="section-header fade-up" style="margin-bottom:48px;">
+        <span class="label">How It Works</span>
+        <h2>관리 프로세스</h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step fade-up">
+          <div class="process-number">1</div>
+          <h4>피부 분석 상담</h4>
+          <p>첫 방문 시 피부 상태를 꼼꼼히 분석하고 고민에 맞는 케어 플랜을 설계합니다</p>
+        </div>
+        <div class="process-step fade-up fade-up-delay-1">
+          <div class="process-number">2</div>
+          <h4>맞춤 케어 진행</h4>
+          <p>개인 피부에 최적화된 제품과 테크닉으로 전문 케어를 진행합니다</p>
+        </div>
+        <div class="process-step fade-up fade-up-delay-2">
+          <div class="process-number">3</div>
+          <h4>홈케어 안내</h4>
+          <p>관리 효과를 유지할 수 있는 홈케어 방법과 제품을 안내해 드립니다</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES GRID ===== -->
+  <section class="services-section" id="all-services">
+    <div style="max-width:1100px;margin:0 auto;">
+      <div class="section-header fade-up">
+        <span class="label">Treatment Menu</span>
+        <h2>케어 메뉴</h2>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- 트러블·여드름 케어 -->
+        <div class="service-card fade-up" id="trouble">
+          <div class="service-card-img">
+            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=800&q=80" alt="트러블·여드름 케어">
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-tag">Best</span>
+            <h3>트러블·여드름 케어</h3>
+            <p>피지 과잉 분비와 모공 막힘으로 생기는 여드름과 트러블을 전문적으로 케어합니다. 피부 장벽을 강화하고 염증을 진정시켜 맑고 건강한 피부로 되돌립니다.</p>
+            <ul class="service-card-features">
+              <li>딥 클렌징 &amp; 각질 케어</li>
+              <li>피지 조절 &amp; 모공 케어</li>
+              <li>여드름 염증 진정</li>
+              <li>진정 마스크 마무리</li>
+            </ul>
+            <div class="service-card-footer">
+              <div>
+                <div class="service-price-from">1회</div>
+                <div class="service-price">[가격]<sub>원~</sub></div>
+              </div>
+              <a href="booking.html" class="btn-primary">예약하기</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 재생·진정 케어 -->
+        <div class="service-card fade-up fade-up-delay-1" id="regen">
+          <div class="service-card-img">
+            <img src="https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&w=800&q=80" alt="재생·진정 케어">
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-tag">추천</span>
+            <h3>재생·진정 케어</h3>
+            <p>손상된 피부 장벽을 회복하고 민감한 피부를 진정시키는 재생 집중 케어입니다. 수분과 영양을 깊이 공급하여 건강한 피부 본연의 힘을 되살립니다.</p>
+            <ul class="service-card-features">
+              <li>피부 장벽 강화</li>
+              <li>집중 수분·영양 공급</li>
+              <li>홍조·민감 진정</li>
+              <li>재생 앰플 집중 관리</li>
+            </ul>
+            <div class="service-card-footer">
+              <div>
+                <div class="service-price-from">1회</div>
+                <div class="service-price">[가격]<sub>원~</sub></div>
+              </div>
+              <a href="booking.html" class="btn-primary">예약하기</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 모공·탄력 케어 -->
+        <div class="service-card fade-up" id="pore">
+          <div class="service-card-img">
+            <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80" alt="모공·탄력 케어">
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-tag">인기</span>
+            <h3>모공·탄력 케어</h3>
+            <p>늘어난 모공을 조여주고 피부 탄력을 높이는 리프팅 케어입니다. 피부 밀도를 높이고 탄력 섬유를 강화하여 팽팽하고 윤기 있는 피부를 만들어 드립니다.</p>
+            <ul class="service-card-features">
+              <li>모공 수축 집중 케어</li>
+              <li>탄력 섬유 강화</li>
+              <li>피부 리프팅</li>
+              <li>광채 마무리 케어</li>
+            </ul>
+            <div class="service-card-footer">
+              <div>
+                <div class="service-price-from">1회</div>
+                <div class="service-price">[가격]<sub>원~</sub></div>
+              </div>
+              <a href="booking.html" class="btn-primary">예약하기</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 스페셜 패키지 -->
+        <div class="service-card fade-up fade-up-delay-1" id="package">
+          <div class="service-card-img">
+            <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&w=800&q=80" alt="스페셜 패키지">
+          </div>
+          <div class="service-card-body">
+            <span class="service-card-tag" style="background:#f0ede8;color:#5c5650;">패키지</span>
+            <h3>스페셜 패키지</h3>
+            <p>집중적인 피부 개선을 원하는 분을 위한 맞춤 패키지입니다. 여러 케어를 결합하여 복합적인 피부 고민을 한번에 해결하고 지속적인 개선 효과를 경험해 보세요.</p>
+            <ul class="service-card-features">
+              <li>복합 케어 조합 구성</li>
+              <li>정기 관리 할인 혜택</li>
+              <li>집중 기간 맞춤 플랜</li>
+              <li>홈케어 제품 포함</li>
+            </ul>
+            <div class="service-card-footer">
+              <div>
+                <div class="service-price-from">패키지</div>
+                <div class="service-price">[가격]<sub>원~</sub></div>
+              </div>
+              <a href="booking.html" class="btn-primary">상담하기</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="services-cta-banner fade-up">
+    <div class="container">
+      <h2>어떤 케어가 맞을지 모르겠다면?</h2>
+      <p>무료 피부 상담을 통해 나에게 딱 맞는 케어 플랜을 추천해 드립니다</p>
+      <div class="cta-actions">
+        <a href="booking.html" class="btn-primary">무료 상담 예약하기</a>
+        <a href="https://pf.kakao.com/_[채널ID]" class="btn-kakao" target="_blank" rel="noopener">💬 카카오로 문의</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-text">THECHAEUM</div>
+          <p>더채움 에스테틱<br>문제성 피부 전문 프리미엄 피부관리샵</p>
+        </div>
+        <div class="footer-col">
+          <h4>서비스</h4>
+          <ul>
+            <li><a href="#trouble">트러블·여드름 케어</a></li>
+            <li><a href="#regen">재생·진정 케어</a></li>
+            <li><a href="#pore">모공·탄력 케어</a></li>
+            <li><a href="#package">스페셜 패키지</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>정보</h4>
+          <ul>
+            <li><a href="index.html#concerns">피부 고민</a></li>
+            <li><a href="index.html#reviews">고객 후기</a></li>
+            <li><a href="booking.html">예약·상담</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>오시는 길</h4>
+          <address>
+            [도로명 주소]<br>
+            TEL [전화번호]<br>
+            월–토 10:00–20:00<br>
+            일요일·공휴일 휴무
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 더채움 에스테틱. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="#">Instagram</a>
+          <a href="#">Kakao</a>
+          <a href="#">Naver</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="booking.html" class="floating-cta" id="floating-cta">지금 예약하기</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

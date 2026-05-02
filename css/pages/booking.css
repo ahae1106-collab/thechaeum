@@ -1,0 +1,462 @@
+/* ===================================
+   BOOKING CHANNELS
+=================================== */
+.booking-channels {
+  background: var(--color-bg);
+  padding: var(--section-gap-mobile) var(--padding-mobile);
+}
+
+@media (min-width: 1024px) {
+  .booking-channels {
+    padding: var(--section-gap-desktop) var(--padding-desktop);
+  }
+}
+
+.channels-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  max-width: 800px;
+  margin: 0 auto 64px;
+}
+
+@media (min-width: 600px) {
+  .channels-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.channel-card {
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 28px 24px;
+  text-align: center;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.channel-card:hover {
+  border-color: var(--color-rose-200);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+.channel-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.channel-icon.kakao { background: #FAE100; }
+.channel-icon.naver { background: #03C75A; color: #fff; }
+.channel-icon.phone { background: var(--color-surface); }
+
+.channel-card h3 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: 6px;
+}
+
+.channel-card p {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.channel-btn {
+  display: block;
+  width: 100%;
+  padding: 11px 16px;
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-align: center;
+  transition: opacity var(--transition-fast);
+  cursor: pointer;
+  border: none;
+}
+
+.channel-btn:hover { opacity: 0.85; }
+
+.channel-btn.kakao-btn {
+  background: #FAE100;
+  color: #3C1E1E;
+}
+
+.channel-btn.naver-btn {
+  background: #03C75A;
+  color: #ffffff;
+}
+
+.channel-btn.phone-btn {
+  background: var(--color-gray-900);
+  color: #ffffff;
+}
+
+/* ===================================
+   BOOKING FORM
+=================================== */
+.booking-form-section {
+  background: var(--color-bg-soft);
+  padding: var(--section-gap-mobile) var(--padding-mobile);
+  border-top: 1px solid var(--color-border);
+}
+
+@media (min-width: 1024px) {
+  .booking-form-section {
+    padding: var(--section-gap-desktop) var(--padding-desktop);
+  }
+}
+
+.booking-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (min-width: 960px) {
+  .booking-layout {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 64px;
+  }
+}
+
+.booking-info h2 {
+  margin-bottom: 16px;
+}
+
+.booking-info p {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+.info-list {
+  list-style: none;
+}
+
+.info-list li {
+  display: flex;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 14px;
+}
+
+.info-list li:last-child {
+  border-bottom: none;
+}
+
+.info-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: var(--color-rose-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 14px;
+}
+
+.info-list-content strong {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.info-list-content span {
+  color: var(--color-text-body);
+}
+
+/* 상담 폼 */
+.consult-form {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 36px 32px;
+}
+
+.consult-form h3 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  margin-bottom: 28px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  margin-bottom: 8px;
+}
+
+.form-group .required {
+  color: var(--color-accent);
+  margin-left: 2px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color-text-primary);
+  background: var(--color-bg);
+  transition: border-color var(--transition-fast);
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--color-rose-400);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+.form-group select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%239e9990' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  cursor: pointer;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-group .field-error {
+  display: none;
+  font-size: 12px;
+  color: #c0392b;
+  margin-top: 5px;
+}
+
+.form-group.has-error input,
+.form-group.has-error select,
+.form-group.has-error textarea {
+  border-color: #c0392b;
+}
+
+.form-group.has-error .field-error {
+  display: block;
+}
+
+/* 피부 고민 체크박스 */
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--color-text-body);
+  padding: 8px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  transition: all var(--transition-fast);
+}
+
+.checkbox-label:hover {
+  border-color: var(--color-rose-200);
+  background: var(--color-rose-50);
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  accent-color: var(--color-cta);
+  cursor: pointer;
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+}
+
+.checkbox-label input[type="checkbox"]:checked + span {
+  color: var(--color-cta);
+  font-weight: 500;
+}
+
+/* 개인정보 동의 */
+.privacy-agree {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 16px;
+  background: var(--color-surface);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.privacy-agree input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--color-cta);
+  margin-top: 2px;
+  flex-shrink: 0;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+}
+
+.privacy-agree-text {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.privacy-agree-text a {
+  color: var(--color-cta);
+  text-decoration: underline;
+}
+
+.form-submit-area {
+  margin-top: 24px;
+}
+
+.form-submit-area .btn-primary {
+  width: 100%;
+  padding: 16px;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+}
+
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.form-success.visible {
+  display: block;
+}
+
+.form-success .success-icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.form-success h3 {
+  margin-bottom: 8px;
+  color: var(--color-text-primary);
+}
+
+.form-success p {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+}
+
+/* ===================================
+   MAP SECTION
+=================================== */
+.map-section {
+  background: var(--color-bg);
+  padding: var(--section-gap-mobile) var(--padding-mobile);
+  border-top: 1px solid var(--color-border);
+}
+
+@media (min-width: 1024px) {
+  .map-section {
+    padding: var(--section-gap-desktop) var(--padding-desktop);
+  }
+}
+
+.map-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (min-width: 960px) {
+  .map-layout {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 64px;
+  }
+}
+
+.map-embed {
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.map-embed iframe {
+  width: 100%;
+  height: 360px;
+  display: block;
+  border: none;
+}
+
+.map-info h3 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.map-details {
+  list-style: none;
+}
+
+.map-details li {
+  display: flex;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 14px;
+  color: var(--color-text-body);
+}
+
+.map-details li:last-child {
+  border-bottom: none;
+}
+
+.map-details li .detail-key {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  min-width: 60px;
+  padding-top: 2px;
+}

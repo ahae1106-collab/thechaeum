@@ -30,8 +30,8 @@
   --color-text-muted:     var(--color-gray-400);
   --color-border:         var(--color-gray-200);
   --color-surface:        var(--color-gray-50);
-  --color-accent:         var(--color-rose-400);
-  --color-cta:            var(--color-rose-600);
+  --color-accent:         var(--color-gray-600);
+  --color-cta:            var(--color-gray-900);
 
   /* === 타이포그래피 === */
   --font-display: 'Cormorant Garamond', serif;

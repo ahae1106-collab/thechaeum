@@ -35,7 +35,7 @@
 }
 
 .channel-card:hover {
-  border-color: var(--color-rose-200);
+  border-color: var(--color-gray-300);
   box-shadow: 0 4px 16px rgba(0,0,0,0.06);
 }
 
@@ -160,7 +160,7 @@
   width: 32px;
   height: 32px;
   border-radius: 6px;
-  background: var(--color-rose-50);
+  background: var(--color-surface);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -237,7 +237,7 @@
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: var(--color-rose-400);
+  border-color: var(--color-gray-600);
 }
 
 .form-group input::placeholder,
@@ -295,8 +295,8 @@
 }
 
 .checkbox-label:hover {
-  border-color: var(--color-rose-200);
-  background: var(--color-rose-50);
+  border-color: var(--color-gray-300);
+  background: var(--color-surface);
 }
 
 .checkbox-label input[type="checkbox"] {

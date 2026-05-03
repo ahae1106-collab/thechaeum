@@ -270,7 +270,7 @@ nav.scrolled .nav-hamburger span {
 }
 
 .btn-primary:hover {
-  background: var(--color-rose-800);
+  background: var(--color-gray-800);
 }
 
 .btn-outline {
